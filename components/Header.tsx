@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ cardTier }) => {
                 </span>
             </div>
             <h1 className="text-xl sm:text-2xl font-bold text-slate-200 text-center sm:text-left">
-                Rent & Mortgage <span className="text-amber-400">Calculator</span>
+                Bilt 2.0 <span className="text-amber-400">Calculator</span>
             </h1>
         </div>
     );
