@@ -1,5 +1,4 @@
 
-
 import React, { useState, useMemo } from 'react';
 import type { CardTier, CalculatorOption, CalculationResults } from './types';
 import { CARD_TIERS, RENT_MULTIPLIERS, BILT_CASH_FEE_RATE, BILT_CASH_REBATE_RATE, BILT_CASH_SPEND_MULTIPLIER, WELCOME_BONUS_CASH, WELCOME_BONUS_PALLADIUM_POINTS, MINIMUM_SPEND_RATIO_THRESHOLD, MINIMUM_SPEND_BASE_POINTS } from './constants';
@@ -10,6 +9,7 @@ import { BiltCashDetails } from './components/BiltCashDetails';
 import { AnnualSummary } from './components/AnnualSummary';
 import { TieredSummary } from './components/TieredSummary';
 import { TierBenefitsDisplay } from './components/TierBenefitsDisplay';
+import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   const [monthlyPayment, setMonthlyPayment] = useState(1900);
@@ -153,6 +153,7 @@ const App: React.FC = () => {
             <TierBenefitsDisplay cardTier={cardTier} />
         </section>
 
+        <Footer />
       </div>
     </div>
   );
